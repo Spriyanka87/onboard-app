@@ -1,0 +1,20 @@
+[{
+   "toilets":2,
+   "frequency":"2Times",
+   "price":899
+},
+{  "toilets":2,
+   "frequency":"4Times",
+   "price":1599
+},
+{
+   "toilets":3,
+   "frequency":"2Times",
+   "price":1349
+},
+{
+   "toilets":3,
+   "frequency":"4Times",
+   "price":2399
+}]
+
