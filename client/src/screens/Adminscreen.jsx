@@ -55,7 +55,7 @@ export function Bookings() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/bookings/getallbookings"
+          "https://onboard-app-rgij.onrender.com/api/bookings/getallbookings"
         );
 
         setbookings(data);
@@ -114,7 +114,7 @@ export function Services() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/services/getallservices"
+          "https://onboard-app-rgij.onrender.com/api/services/getallservices"
         );
 
         setservices(data);
@@ -171,7 +171,7 @@ export function Users() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/users/getallusers"
+          "https://onboard-app-rgij.onrender.com/api/users/getallusers"
         );
 
         setusers(data);
@@ -270,7 +270,7 @@ export function AddService(){
           data.imageurl5,
         ],
     }
-      const result = await axios.post('http://localhost:5000/api/services/addservice',newservice)
+      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/services/addservice',newservice)
       console.log(result.data)
     } catch (error) {
       console.log(error)
