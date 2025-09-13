@@ -82,7 +82,7 @@ export function MyBookings() {
         setError("");
 
         const res = await axios.post(
-          "http://localhost:5000/api/bookings/getbookingsbyuserid/",
+          "https://onboard-app-rgij.onrender.com/api/bookings/getbookingsbyuserid/",
           { userid: user.data._id }
         );
         if (Array.isArray(res.data)) {
@@ -130,7 +130,7 @@ export function MyBookings() {
 
     try {
       setLoading(true)
-      const result = await axios.post("http://localhost:5000/api/bookings/cancelbooking",{bookingid,serviceid})
+      const result = await axios.post("https://onboard-app-rgij.onrender.com/api/bookings/cancelbooking",{bookingid,serviceid})
       console.log(result.data)
 
      setBookings((prev) =>
