@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 
-var mongoURL = 'mongodb+srv://udayasajjanapu:mohnish@cluster0.nag71vn.mongodb.net/sameera'
+var mongoURL = process.env.MONGO_URI;
 
 mongoose.connect(mongoURL ,{useUnifiedTopology : true , useNewUrlParser:true})
 
