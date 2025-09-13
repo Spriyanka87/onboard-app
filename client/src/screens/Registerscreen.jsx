@@ -29,7 +29,7 @@ function Registerscreen() {
       setloading(true)
 
 
-      const result = await axios.post('http://localhost:5000/api/users/register',user)
+      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/users/register',user)
        console.log(result.data)
 
        setloading(false)
