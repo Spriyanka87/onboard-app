@@ -39,7 +39,7 @@ const price = service?.startsat||0;
 
   try {
     setloading(true)
-  const res = await axios.post('http://localhost:5000/api/services/getservicebyid',{serviceid:serviceid});
+  const res = await axios.post('https://onboard-app-rgij.onrender.com/api/services/getservicebyid',{serviceid:serviceid});
     setservice(res.data)
     setloading(false)
   
@@ -73,7 +73,7 @@ async function bookService(){
     console.log('Booking Detailes:',bookingDetails)
 
   try {
-    const result = await axios.post('http://localhost:5000/api/bookings/bookservice',bookingDetails)
+    const result = await axios.post('https://onboard-app-rgij.onrender.com/api/bookings/bookservice',bookingDetails)
     console.log(result.data)
   } catch (error) {
     console.error("Booking Failed:",error)
