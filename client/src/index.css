@@ -74,3 +74,53 @@ h2{
   border-bottom: 5px solid white !important;
 
 }
+
+
+/* Global reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;  /* always black */
+  color: #fff;             /* always white */
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem; /* scales across devices */
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Button */
+button {
+  background: #6a0dad;   /* purple */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive (phones & small tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;   /* smaller heading */
+    text-align: center;
+  }
+  p {
+    font-size: 0.9rem;   /* smaller text */
+    text-align: center;
+  }
+  button {
+    width: 100%;        /* full width button */
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
