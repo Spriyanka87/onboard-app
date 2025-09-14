@@ -1,5 +1,5 @@
 import React from 'react'
-import Adminscreen from './screens/Adminscreen'
+import Adminscreen from '../client/src/screens/Adminscreen'
 
 
 function Admin() {
