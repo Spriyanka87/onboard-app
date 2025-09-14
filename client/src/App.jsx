@@ -13,6 +13,7 @@ import Profilescreen from './screens/Profilescreen'
 import Adminscreen from './screens/Adminscreen'
 import Landingscreen from './screens/Landingscreen'
 import Addservicescreen from './screens/Addservicescreen'
+import Admin from '../../admin/Admin'
 function App() {
   
 
@@ -28,7 +29,7 @@ function App() {
         <Route path="/login" element={<Loginscreen/>}/>
         <Route path="/subscriptions" element={<SubscriptionScreen/>}/>
         <Route path ="/profile" element={<Profilescreen/>}/>
-        <Route path="/admin" element={<Adminscreen/>}/>
+        <Route path="/admin" element={<Admin/>}/>
         <Route path="/" element={<Landingscreen/>}/>
         <Route path="/addservice" element={<Addservicescreen/>}/>
         </Routes>
