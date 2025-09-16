@@ -1,12 +1,21 @@
 body{
   margin: 0;
+  font-family: Arial,  sans-serif;
+  background-color:#f8f9fa;
+
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  flex-wrap: wrap;
+  
   
 }
 .navbar{
-  background-color:blueviolet !important;
+  background-color:blueviolet !important ;
 }
 .nav-link{
-  color:beige !important;
+  color:beige  ;
 }
 .navbar-brand{
   color:beige !important;
@@ -18,33 +27,34 @@ body{
 }
 .smallimg{
   height: 200px;
-  width : 100% !important;
-  border-radius: 5px !important;
+  width : 100% ;
+  border-radius: 5px ;
 }
 h1{
-  font-size: 20px !important;
+  font-size: 20px ;
 }
 .btn{
-  background-color:blueviolet !important;
-  color: beige !important;
-  box-shadow: none !important;
+  background-color:blueviolet !important ;
+  color: beige !important ;
+  box-shadow: none ;
 }
 .bs{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 30px !important;
-  border-radius: 5px !important;
-  padding: 20px !important;
-  margin-bottom: 30px !important;
+  margin-top: 30px ;
+  border-radius: 5px ;
+  padding: 20px ;
+  margin-bottom: 30px ;
 
 }
 .bigimg{
-  height:400px !important;
-  border-radius: 5px !important;
+  height:auto ;
+  
+  border-radius: 5px ;
 }
 input{
    
   margin-top: 30px ;
-  border: 1px solid black !important;
+  border: 1px solid black ;
 }
 h2{
   font-size: 30px ;
@@ -54,73 +64,29 @@ h2{
 
 }
 .dropdown-toggle{
-  border: 0px solid black !important;
+  border: 1px solid black ;
   
 }
 .datepicker{
   background-color:blueviolet;
   border-radius: 5px;
+  
 }
 .landing{
-  background-color: black!important;
+  background-color: black;
   height: 100vh;
   padding-top: 130px;
+  text-align:center ;
 }
 .landingbtn{
-  background-color:blueviolet!important;
+  background-color:blueviolet;
   margin-top: 20px;
+
 }
 .landing .col-md-12{
-  border-bottom: 5px solid white !important;
+  border-bottom: 5px solid white;
+  padding-bottom: 10px;
 
 }
 
 
-/* Global reset */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;  /* always black */
-  color: #fff;             /* always white */
-  font-family: Arial, sans-serif;
-}
-
-/* Headings */
-h1 {
-  font-size: 2.5rem; /* scales across devices */
-  margin-bottom: 1rem;
-}
-
-/* Paragraphs */
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* Button */
-button {
-  background: #6a0dad;   /* purple */
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Responsive (phones & small tablets) */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;   /* smaller heading */
-    text-align: center;
-  }
-  p {
-    font-size: 0.9rem;   /* smaller text */
-    text-align: center;
-  }
-  button {
-    width: 100%;        /* full width button */
-    padding: 14px;
-    font-size: 1rem;
-  }
-}

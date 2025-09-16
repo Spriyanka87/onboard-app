@@ -2,7 +2,7 @@
 
 import './App.css'
 import Navbar from './components/Navbar'
-import{BrowserRouter , Route , Link, Routes} from 'react-router-dom'
+import{BrowserRouter , Route , Link, Routes,HashRouter as Router} from 'react-router-dom'
 import Homescreen from './screens/Homescreen'
 import Bookingscreen from './screens/Bookingscreen' 
 import Registerscreen from './screens/Registerscreen'

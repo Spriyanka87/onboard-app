@@ -16,7 +16,7 @@ const Footer = () => {
         <div style={styles.links}>
           <h4 style={styles.heading}>Quick Links</h4>
           <a href="/home" style={styles.link}>Home</a>
-          <a href="/home" style={styles.link}>Services</a>
+          <a href="/home " style={styles.link}>Services</a>
           <a href="/subscriptions" style={styles.link}>Subscriptions</a>
           <a href="/contact" style={styles.link}>Contact</a>
         </div>

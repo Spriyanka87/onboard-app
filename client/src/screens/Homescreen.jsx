@@ -58,7 +58,7 @@ const filterByDate =(date,dateString)=>
 
       <button
         style={{
-          backgroundColor: "green",
+          backgroundColor: "blue",
           color: "white",
           padding: "15px 25px",
           fontSize: "18px",
@@ -74,7 +74,7 @@ const filterByDate =(date,dateString)=>
       <div className='row justify-content-center mt-3'>
     
         <div className="col-md-3 datepicker ">
-        <div style={{ textAlign: "center", padding: "3px" ,color:"white"}}><h1>Booking Dates</h1></div>
+        <div style={{ textAlign: "center", padding: "3px" ,color:"white"}}><h2>Booking Dates</h2></div>
           <div style={{textAlign:"center",padding:"2px"}}>
             <DatePicker showTime={{use12Hours:true,format:'hh:mm A'}}format='DD-MM-YYYY hh:mm A' onChange={filterByDate}/> 
           </div>

@@ -118,7 +118,7 @@ const tdStyle = {
 const buttonStyle = {
   marginTop: "5px",
   padding: "6px 12px",
-  backgroundColor: "green",
+  backgroundColor: "blue",
   color: "white",
   border: "none",
   borderRadius: "5px",
