@@ -1,13 +1,13 @@
 body{
   margin: 0;
-  font-family: Arial,  sans-serif;
-  background-color:#f8f9fa;
+  font-family: Arial,  sans-serif !important;
+  background-color:#f8f9fa !important;
 
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
 
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: center !important;
+  flex-wrap: wrap !;
   
   
 }
@@ -15,7 +15,7 @@ body{
   background-color:blueviolet !important ;
 }
 .nav-link{
-  color:beige  ;
+  color:beige  !important;
 }
 .navbar-brand{
   color:beige !important;
@@ -26,66 +26,66 @@ body{
   margin-right: 20px;
 }
 .smallimg{
-  height: 200px;
-  width : 100% ;
-  border-radius: 5px ;
+  height: 200px !important;
+  width : 100% !important;
+  border-radius: 5px !important;
 }
 h1{
-  font-size: 20px ;
+  font-size: 20px !important;
 }
 .btn{
   background-color:blueviolet !important ;
   color: beige !important ;
-  box-shadow: none ;
+  box-shadow: none !important ;
 }
 .bs{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 30px ;
-  border-radius: 5px ;
-  padding: 20px ;
-  margin-bottom: 30px ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  margin-top: 30px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+  margin-bottom: 30px !important;
 
 }
 .bigimg{
-  height:auto ;
+  height:400px !important ;
   
-  border-radius: 5px ;
+  border-radius: 5px !important;
 }
 input{
    
-  margin-top: 30px ;
-  border: 1px solid black ;
+  margin-top: 30px !important ;
+  border: 1px solid black !important;
 }
 h2{
-  font-size: 30px ;
-  padding: 10px;
-  font-weight :bold ;
-  text-align: center;
+  font-size: 30px !important;
+  padding: 10px !important;
+  font-weight :bold !important ;
+  text-align: center !important;
 
 }
 .dropdown-toggle{
-  border: 1px solid black ;
+  border: 1px solid black  ;
   
 }
 .datepicker{
-  background-color:blueviolet;
-  border-radius: 5px;
+  background-color:blueviolet !important;
+  border-radius: 5px !important;
   
 }
 .landing{
-  background-color: black;
-  height: 100vh;
-  padding-top: 130px;
-  text-align:center ;
+  background-color: black !important;
+  height: 100vh !important;
+  padding-top: 130px !important;
+  text-align:center !important ;
 }
 .landingbtn{
-  background-color:blueviolet;
-  margin-top: 20px;
+  background-color:blueviolet !important;
+  margin-top: 20px !important;
 
 }
 .landing .col-md-12{
-  border-bottom: 5px solid white;
-  padding-bottom: 10px;
+  border-bottom: 5px solid white !important;
+  padding-bottom: 10px !important;
 
 }
 

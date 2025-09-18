@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Link } from "react-router-dom";
 
 
 const { TabPane } = Tabs;
@@ -55,7 +56,7 @@ export function Bookings() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "https://onboard-app-rgij.onrender.com/api/bookings/getallbookings"
+          `${import.meta.env.VITE_BACKEND_URL}/api/bookings/getallbookings`
         );
 
         setbookings(data);
@@ -114,7 +115,7 @@ export function Services() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "https://onboard-app-rgij.onrender.com/api/services/getallservices"
+          `${import.meta.env.VITE_BACKEND_URL}/api/services/getallservices`
         );
 
         setservices(data);
@@ -171,7 +172,7 @@ export function Users() {
     const fetchBookings = async () => {
       try {
         const { data } = await axios.get(
-          "https://onboard-app-rgij.onrender.com/api/users/getallusers"
+          `${import.meta.env.VITE_BACKEND_URL}/api/users/getallusers`
         );
 
         setusers(data);
@@ -270,7 +271,7 @@ export function AddService(){
           data.imageurl5,
         ],
     }
-      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/services/addservice',newservice)
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/services/addservice`,newservice)
       console.log(result.data)
     } catch (error) {
       console.log(error)

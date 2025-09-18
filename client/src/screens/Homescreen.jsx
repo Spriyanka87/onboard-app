@@ -29,7 +29,7 @@ useEffect(()=>{
  const  fetchData = async () => {
   try {
     setloading(true)
-  const res = await axios.get('https://onboard-app-rgij.onrender.com/api/services/getallservices');
+  const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/services/getallservices`);
     setservices(res.data)
     setloading(false)
   

@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import Error from "../components/Error";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -82,7 +83,7 @@ export function MyBookings() {
         setError("");
 
         const res = await axios.post(
-          "https://onboard-app-rgij.onrender.com/api/bookings/getbookingsbyuserid/",
+          `${import.meta.env.VITE_BACKEND_URL}/api/bookings/getbookingsbyuserid/`,
           { userid: user.data._id }
         );
         if (Array.isArray(res.data)) {
@@ -130,7 +131,7 @@ export function MyBookings() {
 
     try {
       setLoading(true)
-      const result = await axios.post("https://onboard-app-rgij.onrender.com/api/bookings/cancelbooking",{bookingid,serviceid})
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/bookings/cancelbooking`,{bookingid,serviceid})
       console.log(result.data)
 
      setBookings((prev) =>

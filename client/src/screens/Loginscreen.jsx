@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from 'axios';
 import Loader from '../components/Loader';
 import Error from '../components/Error';
+import { Link } from "react-router-dom";
 
 
     function Loginscreen() {
@@ -25,7 +26,7 @@ import Error from '../components/Error';
         setloading(true);
         
 
-      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/users/login',user)
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users/login`,user)
       console.log(result.data)
       
        setloading(false);

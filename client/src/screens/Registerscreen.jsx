@@ -3,6 +3,7 @@ import axios from "axios";
 import Loader from '../components/Loader';
 import Error from '../components/Error';
 import Success from '../components/Success';
+import { Link } from "react-router-dom";
 
 
 function Registerscreen() {
@@ -29,7 +30,7 @@ function Registerscreen() {
       setloading(true)
 
 
-      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/users/register',user)
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users/register`,user)
        console.log(result.data)
 
        setloading(false)

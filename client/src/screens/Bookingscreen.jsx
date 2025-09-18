@@ -40,7 +40,7 @@ const price = service?.startsat||0;
 
   try {
     setloading(true)
-  const res = await axios.post('https://onboard-app-rgij.onrender.com/api/services/getservicebyid',{serviceid:serviceid});
+  const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/services/getservicebyid`,{serviceid:serviceid});
     setservice(res.data)
     setloading(false)
   
@@ -74,7 +74,7 @@ async function bookService(){
     console.log('Booking Detailes:',bookingDetails)
 
   try {
-    const result = await axios.post('https://onboard-app-rgij.onrender.com/api/bookings/bookservice',bookingDetails)
+    const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/bookings/bookservice`,bookingDetails)
     console.log(result.data)
   } catch (error) {
     console.error("Booking Failed:",error)
@@ -94,7 +94,7 @@ Swal.fire({
        <div className="row justify-content-center mt-5 bs">
         <div className="col-md-6">
           <h1>{service.name}</h1>
-          <img src = {service.imageurls[0]} className="bigimg"/>
+          <img src = {service.imageurls[1]} className="bigimg"/>
         </div>
           <div className="col-md-6">
           <div  style = {{textAlign:'right'}}>

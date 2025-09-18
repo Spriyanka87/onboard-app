@@ -12,7 +12,7 @@ async function AddService() {
       name,amount,cleaners,time,phonenumber,description,imageurls:[imageurl1,imageurl2,imageurl3,imageurl4,imageurl5]
     }
     try {
-      const result = await axios.post('https://onboard-app-rgij.onrender.com/api/services/addservice',newservice)
+      const result = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/services/addservice`,newservice)
       console.log(result.data)
     } catch (error) {
       console.log(error)

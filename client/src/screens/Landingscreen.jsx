@@ -13,7 +13,7 @@ function Landingscreen() {
       <div className="col-md-12 text-center">
         {/* Heading animation */}
         <h2
-          style={{ color: "white", fontSize: "120px" }}
+          style={{ color: "white", fontSize: "100px" }}
           data-aos="fade-down"
         >
           On-Board Services

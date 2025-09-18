@@ -9,7 +9,19 @@ const bookingsRoute = require('./routes/bookingsRoute')
 const subscriptionRoute = require('./routes/subscriptionRoute')
 
  
-app.use(cors());
+app.use(cors({
+origin:"https://onboard-services-rdr.netlify.app",
+methods:["GET","POST","PUT","DELETE"],
+credentials:true
+
+
+
+}));
+
+
+
+
+
 app.use(express.json());
 
 app.use('/api/services', servicesRoutes)
